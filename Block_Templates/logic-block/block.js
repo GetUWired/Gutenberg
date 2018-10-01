@@ -15,6 +15,12 @@ function TestLogic({ category }) {
 	if (category === 'option 3') {
 		return <p>Option 3 Selected</p>;
 	}
+	if (category === 'option 4') {
+		return <p>Option 4 Selected</p>;
+	}
+	if (category === 'option 5') {
+		return <p>Option 5 Selected</p>;
+	}
 }
 
 registerBlockType('cgb/logic-test', {
@@ -47,6 +53,8 @@ registerBlockType('cgb/logic-test', {
 						<option value="option 1">option 1</option>
 						<option value="option 2">option 2</option>
 						<option value="option 3">option 3</option>
+						<option value="option 4">option 4</option>
+						<option value="option 5">option 5</option>
 					</select>
 				</form>
 			</div>
