@@ -5,38 +5,38 @@ import './editor.scss';
 const { __ } = wp.i18n;
 const { registerBlockType, query } = wp.blocks;
 
-function RandomImage( { category } ) {
-	const src = 'https://placeimg.com/320/220/' + category;
-	return <img src={ src } alt={ category } />;
+function RandomImage({ category }) {
+	const src = `https://placeimg.com/320/220/${category}`;
+	return <img src={src} alt={category} />;
 }
 
-registerBlockType( 'cgb/block-random-image', {
-	title: __( 'Random Image' ),
+registerBlockType('cgb/block-random-image', {
+	title: __('Random Image'),
 	icon: 'format-image',
 	category: 'common',
-	keywords: [ __( 'random' ), __( 'image' ) ],
+	keywords: [__('random'), __('image')],
 	attributes: {
 		category: {
 			type: 'string',
 			default: 'nature',
 		},
 	},
-	edit: function( props ) {
+	edit(props) {
 		const {
 			attributes: { category },
 			setAttributes,
 		} = props;
-		function setCategory( event ) {
-			const selected = event.target.querySelector( 'option:checked' );
-			setAttributes( { category: selected.value } );
+		function setCategory(event) {
+			const selected = event.target.querySelector('option:checked');
+			setAttributes({ category: selected.value });
 			event.preventDefault();
 		}
 
 		return (
-			<div className={ props.className }>
-				<RandomImage category={ category } />
-				<form onSubmit={ setCategory }>
-					<select value={ category } onChange={ setCategory }>
+			<div className={props.className}>
+				<RandomImage category={category} />
+				<form onSubmit={setCategory}>
+					<select value={category} onChange={setCategory}>
 						<option value="animals">Animals</option>
 						<option value="arch">Architecture</option>
 						<option value="nature">Nature</option>
@@ -47,14 +47,14 @@ registerBlockType( 'cgb/block-random-image', {
 			</div>
 		);
 	},
-	save: function( props ) {
+	save(props) {
 		const {
 			attributes: { category },
 		} = props;
 		return (
 			<div>
-				<RandomImage category={ category } />
+				<RandomImage category={category} />
 			</div>
 		);
 	},
-} );
+});
