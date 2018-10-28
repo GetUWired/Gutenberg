@@ -1,0 +1,39 @@
+.sak-button{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  padding: 5px 25px;
+  margin: 5px 10px;
+  border: none;
+  box-sizing: border-box;
+  white-space: nowrap;
+  text-align: center;
+  border-radius: 5px;
+  background: linear-gradient(to bottom, #2297CF 0%, #003455 100%);
+  transition: .1s;
+}
+.sak-button:hover{
+  color: black;
+  background: linear-gradient(to bottom, #2297CF 0%, #2297CF 100%);
+  transition: .1s;
+
+}
+.sak-content{
+  background-color: white;
+  padding: 0px 3vw 10px;
+}
+.sak-content-buttons{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px auto;
+    flex-wrap: wrap;
+}
+.sak-content-buttons a{
+    margin: 10px;
+}
