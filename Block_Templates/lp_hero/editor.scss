@@ -1,0 +1,24 @@
+.sak-wrapper{
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+}
+.sak-hero-wrapper{
+  max-width: 1000px;
+  margin: auto;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sak-hero{
+  text-align: center;
+  background-size: cover;
+}
+
+.sak-hero iframe{
+  min-width: 300px; 
+  min-height: 150px; 
+  width: 45vw;
+  height: 25vw;   
+}      
