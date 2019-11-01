@@ -50,7 +50,7 @@ registerBlockType( 'guw-blocks/testimonial', {
         },
         imageUrl: {
             attribute: 'src',
-            selector: '.testimonial__imageUrl',
+            selector: '.testimonial__image',
         },
         imageClass: {
             attribute: 'class',
