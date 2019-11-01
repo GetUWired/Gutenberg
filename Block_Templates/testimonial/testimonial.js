@@ -50,7 +50,7 @@ registerBlockType( 'guw-blocks/testimonial', {
         },
         imageUrl: {
             attribute: 'src',
-            selector: '.testimonial__imageUrl',
+            selector: '.testimonial__image',
         },
         imageClass: {
             attribute: 'class',
@@ -141,7 +141,7 @@ registerBlockType( 'guw-blocks/testimonial', {
         return (
             <div className={ props.className }>
                 <div className="image-wrapper">
-                    { testimonialImage( props.attributes.imageUrl, props.attributes.imageAlt ) }
+                    { testimonialImage( props.attributes.imageUrl, props.attributes.imageAlt, props.attributes.imageClass ) }
                 </div>
                 <div className="testimonial-content">
                     <div className="testimonial__body">{ props.attributes.body }</div>
