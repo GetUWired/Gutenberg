@@ -52,6 +52,10 @@ registerBlockType( 'guw-blocks/testimonial', {
             attribute: 'src',
             selector: '.testimonial__imageUrl',
         },
+        imageClass: {
+            attribute: 'class',
+            selector: '.testimonail__image',
+        },
         testimonialName: {
             source: 'text',
             selector: '.testimonial__name',
