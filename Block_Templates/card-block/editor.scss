@@ -24,12 +24,14 @@
 		background: #00fef6;
 		padding: 0.05em 0.3em 0.1em 0.15em;
 		display: inline-block;
+		-webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 		box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 	}
 
 	.image {
 		height: 15.7rem;
 		width: 100%;
+		-o-object-fit: cover;
 		object-fit: cover;
 	}
 }
