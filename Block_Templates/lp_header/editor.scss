@@ -1,0 +1,69 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+ body{
+  font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1600 - 320))); 
+  margin: 0;
+background-color: #F8F8F8;
+}
+
+.sak-button{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  padding: 5px 25px;
+  margin: 5px 10px;
+  border: none;
+  box-sizing: border-box;
+  white-space: nowrap;
+  text-align: center;
+  border-radius: 5px;
+  background: linear-gradient(to bottom, #2297CF 0%, #003455 100%);
+  transition: .1s;
+}
+.sak-button:hover{
+  color: black;
+  background: linear-gradient(to bottom, #2297CF 0%, #2297CF 100%);
+  transition: .1s;
+
+}
+.sak-button img{
+  padding-left: 10px;
+}
+
+.sak.home_logo{
+  max-width: 300px;
+}
+
+.sak-header{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+  box-sizing: content-box;
+  align-items: center;
+background-color: white;
+}
+.sak-header-logo {
+  margin: 20px auto;
+}
+.sak-header-call{
+  margin: 10px auto;
+}
+
